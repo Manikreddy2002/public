@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Sharing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Food Sharing: Donate Leftover Food</h1>
+        <nav>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#donate">Donate Food</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>This section explains the process of how donors can donate their leftover food and how it reaches those in need.</p>
+    </section>
+
+    <section id="donate">
+        <h2>Donate Food</h2>
+        <form id="donation-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Pickup Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="food-description">Food Description:</label>
+            <textarea id="food-description" name="food-description" required></textarea>
+
+            <label for="pickup-time">Preferred Pickup Time:</label>
+            <input type="datetime-local" id="pickup-time" name="pickup-time" required>
+
+            <button type="submit">Submit Donation</button>
+        </form>
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Information about the organization, its mission, and its impact.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ways to reach out for queries or further involvement.</p>
+    </section>
+
+    <section id="map-section">
+        <h2>Find Food Donation Locations</h2>
+        <div id="map" style="height: 400px;"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Food Sharing Initiative</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Ensure your API key is correct and there are no extra quotes around it -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvR-q4WRcujnKszGdIgyotBFFRD7TRTVY&callback=initMap" async defer></script>
+
+</body>
+</html>
