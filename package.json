@@ -1,25 +1,6 @@
 {
-  "name": "package",
-  "version": "1.0.0",
-  "description": "",
-  "main": "food.js",
-  "scripts": {
-    "test": "food.html",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Manikreddy2002/projects.git"
-  },
-  "keywords": [
-    "Dont",
-    "waste",
-    "food"
-  ],
-  "author": "manik",
-  "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/Manikreddy2002/projects/issues"
-  },
-  "homepage": "https://github.com/Manikreddy2002/projects#readme"
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
 }
